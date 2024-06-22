@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+
+section {
+    max-width: 800px;
+}
+
+.cards{
+    font-display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80vw;
+}
+.cards h2{
+ font-size: 50px;
+ text-align: center;
+ display: block;
+ margin-bottom: 20px;
+}
+
+.cards article{
+    display: inline-block;
+    width: 300px;
+    padding: 20px 10px;
+    margin: 10px;
+}
+.cards article span{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.box{
+    border: 1px solid rgba(221,228,237,.32);
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px ;
+    border-radius: 15px;
+    width: 100%;
+}
+
+section img{
+    max-width: calc(100vw -500px);
+    max-height: 100vh;
+    -webkit-backdrop-shadow: rgba(221,228,237,.32);
+}

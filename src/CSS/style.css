@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+:root{
+    --bg-body:#222;
+    --bg-alt: #050506;
+    --text-color:#f5f2f5;
+
+    --primary-color:#3014EE;
+    --header-height:70px;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: var(--bg-body);
+    color: var(--text-color);
+}
+
+.navigation{
+    position: fixed;
+    width: 100%;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: var(--bg-alt);
+    padding:  0px 50px;
+    z-index: 100; 
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 40px;
+    color: var(--text-color);
+    cursor: pointer;
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+
+  
+.logo span{
+    color: var(--primary-color);
+    width: 20px;
+    height: 20px;
+}
+
+.btn-close{
+    display: none;
+}
+.navigation ul{
+    display: flex;
+    width: 100%;
+}
+ul li{
+    list-style: none;
+    margin-right: 15px;
+    cursor: pointer;
+    margin: 10px 20px;
+    height: 100%;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 25px;
+    height: 100%;
+    padding: 7px 3px;
+}
+
+.navigation ul li a:hover{
+    color: var(--primary-color);
+}
+.list-item:hover{
+    color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+.actions{
+    padding: 20px 0px; 
+}
+
+.active{
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    /*border-top: 2px solid var(--primary-color);*/
+}
+.actions button{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    font-size: 30px;
+    color: var(--text-color);
+    border: none;
+    cursor: pointer; 
+}
+
+.btn-menu{
+    display: none;
+}
+
+.section{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    z-index: 2;
+}
+
+.section-title{
+font-size: 5vw;
+text-align: center;
+margin: 20px 0px;
+}
+.container{
+    margin: 30px 10px 15px;
+    display: flex;
+    width: 100vw;
+    height:auto ;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main{
+    margin-top: var(--header-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
