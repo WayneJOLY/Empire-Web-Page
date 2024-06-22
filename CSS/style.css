@@ -19,6 +19,10 @@ html{
     color: var(--text-color);
 }
 
+
+body{
+    height: calc(100vh-100px);
+}
 .navigation{
     position: fixed;
     width: 100%;
@@ -32,19 +36,13 @@ html{
 }
 
 .logo{
-    text-decoration: none;
-    font-size: 40px;
-    cursor: pointer;
-    font-family: "Rubik Doodle Shadow", system-ui;
-    font-weight: 500;
-    font-style: normal;
+    width:60px;
+    height: 60px;
 }
-
-  
-.logo span{
-    color: var(--primary-color);
-    width: 20px;
-    height: 20px;
+.logo img{
+    width:95%;
+    height: 95%;
+    object-fit: cover;
 }
 
 .btn-close{
@@ -110,10 +108,39 @@ ul li{
     z-index: 2;
 }
 
+
+.section{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    z-index: 2;
+}
+/*#1d1d1b   #f19100     #efc028   #f17a06    rgba(29,29,27,255)   rgba(241,145,0,255)*/
+.box{
+    border: 1px solid rgba(221,228,237,.32);
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(227,228,237,.12);
+    border-radius: 15px;
+    width: 100%;
+}
+
 .section-title{
 font-size: 5vw;
 text-align: center;
 margin: 20px 0px;
+display: block;
+}
+
+.section p{
+    max-width: 450px;
+    color: #f1f1f1;
+}
+.section .main{
+    max-width: 450px;
+    padding: 15px;
 }
 .container{
     margin: 30px 10px 15px;
@@ -136,6 +163,7 @@ margin: 20px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    height: calc(100vh vvar(--header-height));
    }
    
    .card{
@@ -190,7 +218,7 @@ margin: 20px 0px;
        width: 40px;
        height: 40px;
        font-size: 40px;
-       color: var(--primary-color);
+       color: #f1f1f1;
        background-color: transparent;
        text-align: center;
      }
@@ -198,19 +226,108 @@ margin: 20px 0px;
      .card figcaption a:hover{
        color: #f1f1f1;
      }
-   
-     .link1{
-       position: absolute;
-       left: 10px;
-       bottom: 10px;
-     }
-     .link2{
+
+      .link{
        position: absolute;
        right: 10px;
        bottom: 10px;
+       color: red;
      }
      .card:hover figcaption{
        transform: none;
      }
    
      
+
+/*-----------------------Media Queries  Start------------------*/
+     @media (max-width: 768px){
+
+    
+        .nav{
+        position: fixed;
+        top: var(--header-height);
+        left: -100%;
+        width: 80%;
+        height: calc(100vh - var(--header-height));
+        padding: 60px 20px 40px;
+        background-color: #333;
+        transition: left .5s ease-in-out;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+        ul li{
+            margin-bottom: 20px;
+            cursor: pointer;
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+        .btn-close{
+            font-size: 30px;
+            position: absolute;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            top: 60px;
+            left: 80%;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            border: none;
+            color: var(--text-color);
+        }
+    
+         .show-menu{
+            position: fixed;
+            top: var(--header-height);
+            left: 0%;
+            width: 80%;
+            height: calc(100vh - var(--header-height));
+            padding: 60px 20px 40px;
+            background-color: #333; 
+            transition: left .5s ease-in-out;
+            /*<--!rgba(237, 237, 237,.5)-->*/
+        }
+        
+        .btn-menu{
+           display: contents;
+           top:20px;
+           right: 20px;
+        }
+        .about-information h2{
+            font-size: 10vw;
+        }
+        .about-information p{
+            margin-bottom: 20px;
+            font-size: 5vw;
+            }
+    
+        .card figcaption ul li{
+            display: none;
+        }
+            
+    }
+    @media (max-width: 480px){
+        body{
+            width: 100VW;
+        }
+    
+        .section{
+            width: 100%;
+            margin: auto;
+            padding: 10px;
+        }
+        .section-title{
+            font-size: 15vw;
+        }
+        .soft-skills ul li h3{
+            display: flex;
+            align-content: center;
+            font-size: 9vw; 
+        }
+    }
+    
+    
+    /*-----------------------Media Queries  End------------------*/
