@@ -276,7 +276,7 @@ display: block;
             align-items: center;
             background-color: transparent;
             border: none;
-            color: var(--text-color);
+            color: blue;
         }
     
          .show-menu{
@@ -293,19 +293,12 @@ display: block;
         
         .btn-menu{
            display: contents;
+           color: blue;
            top:20px;
            right: 20px;
         }
         .about-information h2{
             font-size: 10vw;
-        }
-        .about-information p{
-            margin-bottom: 20px;
-            font-size: 5vw;
-            }
-    
-        .card figcaption ul li{
-            display: none;
         }
             
     }
@@ -313,7 +306,6 @@ display: block;
         body{
             width: 100VW;
         }
-    
         .section{
             width: 100%;
             margin: auto;
@@ -321,11 +313,6 @@ display: block;
         }
         .section-title{
             font-size: 15vw;
-        }
-        .soft-skills ul li h3{
-            display: flex;
-            align-content: center;
-            font-size: 9vw; 
         }
     }
     
