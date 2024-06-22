@@ -20,9 +20,7 @@ html{
 }
 
 
-body{
-    height: calc(100vh-100px);
-}
+
 .navigation{
     position: fixed;
     width: 100%;
@@ -296,9 +294,6 @@ display: block;
            color: blue;
            top:20px;
            right: 20px;
-        }
-        .about-information h2{
-            font-size: 10vw;
         }
             
     }
