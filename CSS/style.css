@@ -155,7 +155,7 @@ display: block;
 }
 .container{
     margin: 30px 10px 15px;
-    width: 100%;
+    width: inherit;
     display: flex;
     height:auto ;
     flex-wrap: wrap;
@@ -248,11 +248,29 @@ display: block;
        transform: none;
      }
    
-     
+   .gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-rows: repeat(auto-fit,minmax(200px,1fr));
+    gap: 5px;
+   }  
+   .gallery a{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+   }
 
+   .gallery a img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+   }
 /*-----------------------Media Queries  Start------------------*/
      @media (max-width: 768px){
-
+        html{
+            max-width: 100vh;
+            overflow-x: hidden;
+        }
     
         .nav{
         position: fixed;
@@ -313,6 +331,9 @@ display: block;
             
     }
     @media (max-width: 480px){
+        html{
+            max-width: 100vh;
+        }
         body{
             width: 100VW;
         }
