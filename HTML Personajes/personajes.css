@@ -107,6 +107,32 @@ body{
     width: 100vw;
     background-color: skyblue;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;   
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    border: solid white 3px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.box .box-text{
+    width: clamp(300px,60%,60vw);
+    display: block;
+    height: 90%;
+}
+
+.box .box-img{
+    width: clamp(400px,40%,40vw);
+    height:400px ;
+}
+
+.box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
