@@ -169,7 +169,7 @@ display: block;
     align-items: center;
 }
 
-/*------------------------*/
+/*-----------personajesPrincipales  Start-------------*/
  .personajesPrincipales{
     display: flex;
     flex-wrap: wrap;
@@ -238,16 +238,21 @@ display: block;
        color: #f1f1f1;
      }
 
-      .link{
+    .link{
        position: absolute;
        right: 10px;
        bottom: 10px;
+       font-size: 40px;
+       font-weight: 500;
        color: red;
      }
+     .link svg{
+        fill: green; /* Cambia el color a verde */
+      }
      .card:hover figcaption{
        transform: none;
      }
-   
+  /*-----------personajesPrincipales  END-------------*/ 
    .gallery{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
