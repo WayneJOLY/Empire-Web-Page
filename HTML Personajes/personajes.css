@@ -107,7 +107,7 @@ body{
     width: 100vw;
     background-color: skyblue;
     display: flex;
-    flex-direction: column;   
+    flex-direction: column; padding-top: 100px;  
 }
 
 .box{
@@ -117,6 +117,7 @@ body{
     border: solid white 3px;
     border-radius: 20px;
     overflow: hidden;
+    margin: 30px auto;
 }
 
 .box .box-text{
@@ -125,6 +126,17 @@ body{
     height: 90%;
 }
 
+.box-text span{
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 5vw;
+}
+
+.box-text p{
+    font-size: 2.5vw;
+    margin: auto 20px;
+}
 .box .box-img{
     width: clamp(400px,40%,40vw);
     height:400px ;
