@@ -21,7 +21,7 @@ html{
 body{
 background-image: url(./src/img/236025.jpg);
 }
-.navigation{
+/*.navigation{
     position: fixed;
     width: 100%;
     height: var(--header-height);
@@ -81,7 +81,7 @@ ul li{
 .active{
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
-    /*border-top: 2px solid var(--primary-color);*/
+    /*border-top: 2px solid var(--primary-color);
 }
 .actions button{
     width: 30px;
@@ -107,7 +107,7 @@ ul li{
     align-items: center;  
     z-index: 2;
 }
-/*#1d1d1b   #f19100     #efc028   #f17a06    rgba(29,29,27,255)   rgba(241,145,0,255)*/
+/*#1d1d1b   #f19100     #efc028   #f17a06    rgba(29,29,27,255)   rgba(241,145,0,255)
 .box{
     border: 1px solid rgba(221,228,237,.32);
     backdrop-filter: blur(30px);
@@ -148,7 +148,7 @@ display: block;
 }
 
 
-/*-----------------------Media Queries  Start------------------*/
+/*-----------------------Media Queries  Start------------------
 
 @media (max-width: 768px){
 
@@ -198,7 +198,7 @@ display: block;
         padding: 60px 20px 40px;
         background-color: #333; 
         transition: left .5s ease-in-out;
-        /*<--!rgba(237, 237, 237,.5)-->*/
+        /*<--!rgba(237, 237, 237,.5)-->/
     }
     
     .btn-menu{
@@ -241,3 +241,62 @@ display: block;
 
 
 /*-----------------------Media Queries  End------------------*/
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 100%;
+    background-color: #f5f2f5;
+    min-height: 80vh;
+    color: black;
+}
+
+.contact h2{
+     color: #050506;
+     display: block;
+     text-align: center;
+}
+
+.contact article{
+    background-color: #3014EE;
+}
+.contact-info{
+    max-width: 50vw;
+}
+.contact .contact-form{
+    background-color: #222;
+}
+.contact form{
+    background-color: aqua;
+    color: #222;
+    width: 100%;
+    min-width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+}
+
+.contact form h3{
+    padding: 20px auto;
+    color: black;
+}
+
+.contact form input{
+    border: 2px solid black;
+    padding: 10px 30px;
+    margin: auto 20px ;
+    border-radius: 15px;
+    background: none;
+}
+
+.contact form textarea{
+    min-height: 200px;
+    margin: auto 20px ;
+    border: 2px solid black;
+    max-width: 40vw;
+    border-radius: 15px;
+    padding:20px;
+}
