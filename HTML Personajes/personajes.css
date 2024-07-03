@@ -40,6 +40,7 @@ body{
     border: dashed black 5px;
     z-index: -1;
 }
+
 .hero .picture{
     height: 150vh;
     width: 50vw;
@@ -170,10 +171,28 @@ body{
         overflow-x: hidden;
     }
 
+    .hero .picture{
+        
+        display: none;
+        
+    }
+    .picture img{
+        display: none;
+    }
+
+    
+    .box .box-img{
+        width: 100%;
+    }
     .box-text p{
-        font-size: 1.3rem;
+        font-size: 2.3rem;
         margin: 15px 20px;
-        padding: 5px auto;
+        padding: 20px auto;
+        width: 100%;
+    }
+    .box-text span{
+        font-size: 5rem;
+        margin:  20px;
     }
 }
 
@@ -183,18 +202,25 @@ body{
         overflow-x: hidden;
     }
 
-    .hero div{
-        width: 100%;
-
-    }
-     .picture{
-        display: none;
+    .hero .picture{  
+        display: none;   
     }
     .shape{
+        display: none; 
+    }
+    .picture img{
         display: none;
+    }
+
+    .box-text p{
+        font-size: 1.3rem;
+        padding: 20px auto;
+        width: 100%;
     }
     .box-text span{
         font-size: 2rem;
         margin:  20px auto;
     }
+
+    
 }
