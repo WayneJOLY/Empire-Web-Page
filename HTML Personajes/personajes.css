@@ -142,6 +142,9 @@ body{
     
 }
 
+.temporadas .box-text p{
+    font-size: 2vw;
+}
 .box-text span{
     display: block;
     text-align: center;
