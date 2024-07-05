@@ -5,11 +5,11 @@
     color: var(--text-color);
 }
 :root{
-    --bg-body:#222;
-    --bg-alt: #050506;
-    --text-color:#f5f2f5;
+    --bg-body:  #222;         /*#1c1c1c   */
+    --bg-alt: #1c1c1c; /* #48444c  #050506 */
+    --text-color: #f5f2f5e8; /*     #48444c*/
 
-    --primary-color:#3014EE;
+    --primary-color:#c1a243;/*      #986719      #3014EE*/  
     --header-height:70px;
 }
 
@@ -204,8 +204,8 @@ display: block;
      .card figcaption{
        grid-area: cards;
        position: relative;
-       background: #000000f0;
-       transform: translateY(calc(100% - 3rem));
+       background: #000000f3;
+       transform: translateY(calc(100% - 4rem));
        transition: transform 600ms;
        padding: 0px 20px 20px 20px;
      }
@@ -329,7 +329,6 @@ display: block;
             align-items: center;
             background-color: transparent;
             border: none;
-            color: blue;
         }
     
          .show-menu{
@@ -368,6 +367,7 @@ display: block;
         }
         .section-title{
             font-size: 15vw;
+            margin-top: 70px;
         }
 
         .yutube div iframe{

@@ -4,12 +4,28 @@
     padding: 0;
 }
 
+:root{
+    --bg-body:  #222;         /*#1c1c1c   */
+    --bg-alt: #1c1c1c; /* #48444c  #050506 */
+    --text-color: #f5f2f5e8; /*     #48444c*/
+
+    --primary-color:#c1a243;/*      #986719      #3014EE*/  
+    --header-height:70px;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: var(--bg-body);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
 html{
     width: 100vw;
     overflow-x: hidden;
 }
 body{
-    background-color: rgb(118, 118, 115);
+    background-color: var(--bg-body);
 }
 .hero{
     width: 100vw; 
@@ -27,13 +43,13 @@ body{
     font-size: 5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: transparent;
-    -webkit-text-stroke: 5px white;
+    -webkit-text-stroke: 5px var(--text-color);
 }
 
 .hero .shape{
     width: 100vw;
     height: 100vw;
-    background-color: rgb(115, 115, 115);
+    background-color: var(--bg-body);
     position: absolute;
     border-radius: 50%;
     right: -50%;
@@ -86,7 +102,7 @@ body{
     display: inline-block;
     width: 70px;
     height: 70px;
-    background-color: red;
+    background-color: var(--bg-alt);
     text-align: center;
     justify-content: center;
     border-radius: 50%;
@@ -95,8 +111,8 @@ body{
 .hero-nav .btn{
     width: 150px;
     height: 70px;
-    background-color: black;
-    color: azure;
+    background-color: var(--primary-color);
+    color: var(--bg-alt);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -104,23 +120,31 @@ body{
     font-size: 1.5rem;
     border-radius: 10px;
 }
+
+.hero-nav .btn:hover{
+    background-color:var(--bg-alt) ;
+    color: var(--primary-color);
+}
 .hero-nav div a svg{
     width: 100%;
     height: 100%;
-    fill:black;
-    border: solid blue 2px;
+    fill: transparent;
+    border: solid var(--primary-color) 2px;
     border-radius: inherit;
 }
 .hero-nav div a:last-child{
     margin-left: 10px;
 }
 
-
+.hero-nav div a svg:hover{
+    background-color: var(--primary-color);
+    border: solid var(--primary-color) 2px;
+}
 /*------------HERO NAV END-----------*/
 
 .cards{
     width: 100vw;
-    background-color: skyblue;
+    background-color: var(--bg-body);
     display: flex;
     flex-direction: column; padding-top: 100px;  
 }
@@ -129,7 +153,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     width: 90vw;
-    border: solid white 3px;
+    border: solid var(--bg-alt) 3px;
     border-radius: 20px;
     overflow: hidden;
     margin: 30px auto;
@@ -229,5 +253,14 @@ body{
         font-size: 1.3rem;
         padding: 20px auto;
         width: 100%;
+    }
+
+    .hero-title{ 
+        font-weight: 500;
+        display: block;
+        font-size: 4rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: var(--primary-color);
+        -webkit-text-stroke: var(--primary-color);
     }
 }
