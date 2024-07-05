@@ -124,6 +124,7 @@ body{
 .hero-nav .btn:hover{
     background-color:var(--bg-alt) ;
     color: var(--primary-color);
+    border: solid var(--primary-color) 2px;
 }
 .hero-nav div a svg{
     width: 100%;
