@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escritores</title>
+    <link rel="icon" href="./src/img/Personages Principales  images/Empire Icon.webp">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../HTML Personajes/personajes.css">
+    <title>Formulario</title>
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
     <head>
         <nav class="navigation">
-            <a href="/" class="logo"><img src="../src/img/Personages Principales  images/OIP (17) (1).webp" alt=""></a>
+            <a href="../index.html" class="logo"><img src="../src/img/Personages Principales  images/OIP (17) (1).webp" alt=""></a>
                 <div class="nav">
                     <button aria-label="close" id="btn-close" class="btn-close">
-                        <box-icon name='x-circle'></box-icon>
+                        <i class='bx bx-x'></i>
                     </button>
                     <ul class="nav-menu">
                         <li class="list-item" ><a class="list-link active" href="../index.html">Inicio</a></li>
                         <li class="list-item" ><a class="list-link" href="personajes.html">Personajes</a></li>
-                        <li class="list-item" ><a class="list-link" href="Temporadas.html"   >Temporadas</a></li>
+                        <li class="list-item" ><a class="list-link" href="Temporadas.html"   >Teporadas</a></li>
                         <li class="list-item" ><a class="list-link" href="Banda Sonora.html"  >Banda Sonora</a></li>
-                        <li class="list-item" ><a class="list-link" href="Escritore.html" >Escritores</a></li>
-                        <li class="list-item" ><a class="list-link" href="premios.html" >Premios</a></li>
+                        <li class="list-item" ><a class="list-link" href="form.html" >Contacto</a></li>
                     </ul>
                 </div>
             <div class="actions">
@@ -35,16 +34,20 @@
             </div>
         </nav>
     </head>
-
-    <section class="section">
-        <h2 class="section-title" > Autores</h2>
-
-        
-
-        
-    </Section>
-
-
+    <section  class="section">
+        <h2 class="section-title">Contactenos</h2>
+        <div class="contact container">
+            <article class="contact-form">
+                <form action="submit">
+                    <input type="text" placeholder="ingrese su Nombre">
+                    <input type="email" name="" id=""placeholder="ingrese su Direccion email">
+                    <input type="tel" name="" id="" placeholder="ingrese su Numero de telefono">
+                    <textarea name="message" id="" placeholder="ingrese su Mensaje"></textarea>
+                    <button>Enviar</button>
+                </form>
+             </article>
+        </div>
+    </section>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="../Java script/index.js"></script>

@@ -178,6 +178,15 @@ display: block;
     align-items: center;
 }
 
+.bandasonora {
+    width: 90%;
+    padding: 15px;
+    margin-top: 100px;
+}
+
+.bandasonora p{
+    font-size: 2.5rem;
+}
 /*-----------personajesPrincipales  Start-------------*/
  .personajesPrincipales{
     display: flex;
@@ -293,6 +302,72 @@ display: block;
     height: 100%;
     object-fit:cover;
    }
+
+   /*-----------------------CONTACT START  ------------------*/
+   
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 100%;
+    background-color: var(--bg-alt);
+    min-height: 80vh;
+    color: var(--text-color);
+}
+
+.contact h2{
+     color: var(--primary-color);
+     display: block;
+     text-align: center;
+}
+
+
+
+.contact .contact-form{
+    background-color: var(--bg-body);
+}
+.contact form{
+    background-color:var(--bg-alt);
+    color: var(--primary-color);
+    width: 100%;
+    min-width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+}
+
+.contact form input{
+    border: 2px solid black;
+    padding: 10px 30px;
+    margin: auto 20px ;
+    border-radius: 15px;
+    background: none;
+}
+
+.contact form textarea{
+    min-height: 200px;
+    margin: auto 20px ;
+    border: 2px solid black;
+    background-color: transparent;
+    border-radius: 15px;
+    padding:20px 30px;
+}
+.contact form button{
+    width: 100%;
+    margin:20px auto  ;
+    padding:20px 30px;
+    background-color: var(--primary-color);
+    color: var(--bg-alt);
+    border: solid 2px transparent;
+}
+form button:hover{
+    background-color: var(--bg-alt);
+    border: solid 2px var(--primary-color);
+    color: var(--primary-color);
+}
+/*-----------------------CONTACT END  ------------------*/
 /*-----------------------Media Queries  Start------------------*/
      @media (max-width: 768px){
         html{
@@ -379,6 +454,10 @@ display: block;
             height: auto;
             overflow: hidden;
             gap: 20px;
+        }
+
+        .bandasonora p{
+            font-size: 1.3rem;
         }
     }
     
