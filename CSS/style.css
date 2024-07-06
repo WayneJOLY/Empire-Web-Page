@@ -310,7 +310,7 @@ display: block;
     flex-wrap: wrap;
     justify-content: space-evenly;
     max-width: 100%;
-    background-color: var(--bg-alt);
+    background-color: var(--bg-body);
     min-height: 80vh;
     color: var(--text-color);
 }
