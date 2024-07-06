@@ -187,6 +187,41 @@ display: block;
 .bandasonora p{
     font-size: 2.5rem;
 }
+
+/*-----------Footer   START-------------*/
+
+footer {
+    display: flex;
+    background-color: var(--bg-alt);
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    height: 100px;
+  }
+  
+  footer div {
+    width: 30%;
+  }
+  
+  footer div a{
+    font-size:  50px;
+    font-weight:  50px;
+
+  }
+  footer div p {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+  footer img {
+    max-width: 2.5rem;
+    margin-left: 10%;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+/*-----------Footer   End-------------*/
 /*-----------personajesPrincipales  Start-------------*/
  .personajesPrincipales{
     display: flex;
@@ -280,28 +315,39 @@ display: block;
     grid-auto-flow: dense;
     gap: 20px;
    }  
-   .gallery a{
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-   }
+   /* Codigos ajenos------------------------------*/
+.galeria{
+	margin: 5% auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.5%;
+	
+}
 
-   .gallery a:nth-child(1){
-    grid-column: span 2;
-    grid-row: span 2;
-   }
+.galeria a {
+    margin: 0.5%; 
+    text-align: center;
+    max-width: 30%; 
+	min-width: 200px;
+}
 
-    .c-col2{
-        grid-column: span 2;
-    }
-    .r-col2{
-        grid-row: span 2;
-    }
-   .gallery a img{
+.galeria a img {
     width: 100%;
-    height: 100%;
-    object-fit:cover;
-   }
+    height: auto;
+    object-fit: cover;
+    max-height: 300px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+    transition: all .7s;
+}
+
+.galeria a img:hover{
+	opacity: 1;
+	transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 
    /*-----------------------CONTACT START  ------------------*/
    

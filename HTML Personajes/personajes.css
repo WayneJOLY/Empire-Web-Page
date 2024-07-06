@@ -44,6 +44,8 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: transparent;
     -webkit-text-stroke: 5px var(--text-color);
+
+    margin-top: 80px;
 }
 
 .hero .shape{
@@ -143,8 +145,9 @@ body{
 }
 /*------------HERO NAV END-----------*/
 
-.cards{
-    width: 100vw;
+.info{
+    width: 90%;
+    margin: 20px auto;
     background-color: var(--bg-body);
     display: flex;
     flex-direction: column; padding-top: 100px;  
@@ -153,7 +156,7 @@ body{
 .box{
     display: flex;
     flex-wrap: wrap;
-    width: 90vw;
+    width: 100%;
     border: solid var(--bg-alt) 3px;
     border-radius: 20px;
     overflow: hidden;
