@@ -367,8 +367,36 @@ footer {
      text-align: center;
 }
 
+.contact div{
+    width: clamp(400px ,500px, 80%);
+    margin-bottom: 20px;
+}
 
+.contact div img{
+    width: 100%;
+    object-fit: fill;
+    margin-bottom: 20px;
+}
 
+.contact div img{
+    
+
+    animation-name: moveY;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes moveY{
+    from{
+        transform:translateY(0px);
+    
+    }
+    to{
+        transform:translateY(25px);
+        
+    }
+}
 .contact .contact-form{
     background-color: var(--bg-body);
 }
@@ -504,6 +532,9 @@ form button:hover{
 
         .bandasonora p{
             font-size: 1.3rem;
+        }
+        .contact form input{
+            margin: 10px 20px;
         }
     }
     
